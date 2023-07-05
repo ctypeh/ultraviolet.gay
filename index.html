@@ -35,20 +35,22 @@ Please make sure you README.md!
 	<meta name="msapplication-config" content="/img/icon/browserconfig.xml">
 	<meta name="theme-color" content="#440099">
 	<link rel="stylesheet" href="theme.css">
-	<script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-	<script language="JavaScript" type="text/javascript" src="js/script.js"></script>
 	<style>
 		:root {
-			background: #000000;
+		  background: #ffffff;
 		}
 		body {
-			background: #000000;
+		  background: #ffffff;
 		}
 		* {
-			color: #101010;
+		  color: #f0f0f0;
+		}	
+		a:hover {
+			color: #fedb00 !important;
 		}
 		a:hover {
-			color: #440099 !important;
+			text-decoration-color: #440099 !important;
+			text-decoration-style: wavy !important;
 		}
 	</style>
 </head>
@@ -56,7 +58,8 @@ Please make sure you README.md!
 <body>
 	<r-grid class="main" columns="4" columns-s="1">
 		<r-cell span=row>
-			<h1 class="xxxlarge single-line">ultraviolet<span class=rainbow>.</span>gay</h1>
+			<h1 class="xxxlarge single-line">ultraviolet<span style="cursor: help;" class=rainbow onclick="
+			document.body.style.background = 'black'; document.getElementById('root').style.background = 'black';">.</span>gay</h1>
 		</r-cell>
 	</r-grid>
 	<r-grid class="main" columns="3" columns-s="1">
