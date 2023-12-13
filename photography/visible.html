@@ -40,24 +40,21 @@ Please make sure you README.md!
       text-decoration-style: wavy !important;
       color: #fedb00 !important;
     }
-    r-grid r-cell:has(img) {
-      padding-bottom: 30px;
-    }
-    /*
-    img:hover {
-      box-shadow: 0 0px 0px 10px #440099 !important;
-    }
-    */
     * {
       z-index: 1;
     }
-  </style> <!--style="transform-origin: 0 0; transform: rotate(90deg); word-break: keep-all;"-->
+    @media screen and (min-width: 600px) {
+      .show-small-only {
+        display: none;
+      } 
+    }
+  </style>
 </head>
 <body>
   <h1 style="display: block;
   transform-origin: 0 0; transform: rotate(90deg); position: absolute; top: .2em; left: 1em; max-height: 100%; word-break: keep-all; mix-blend-mode: hard-light; color: #fedb00; z-index: 0;" class="xxxlarge">visible-light</h1>
 
-  <r-grid columns=4 columns-m=4 columns-s=2 columns-xs=1>
+  <r-grid columns=4 columns-s=2>
     <r-cell span=2 span-s=row>
       <p>
         Hey, friends.
@@ -69,23 +66,23 @@ Please make sure you README.md!
       </p>-->
       <p>If you wanna look more closely at a picture, right click it or something. This is a website, I'm not a cop, and I'm trying to get my money's worth out of whatever hosting provider this is on. Don't email me. I don't wanna get email.</p>
     </r-cell>
-    
     <r-cell span=row class=h5>
       <!--
       <p>These are section links, which you can click to go places, because you're smart, and you've got your special webpage-makin-boots on. You know things about the 1990s and the kind of people who buy a black Volkswagen Jetta.
       </p>
       -->
       <!--⁂※✿§◊-->
+      <span class="show-small-only">
       Skip To
       ⟹ <a href="#top">All Pictures</a>
       ⇒ § <a href="#flowers">Floriography</a>
-      → <a href="#venus">Spring in Seattle</a>
       → <a href="#misc">Miscellaneous</a>
       → <a href="#phones">⌘ Connections Museum</a>
+      </span>
     </r-cell>
-
+  </r-grid>
+  <r-grid columns=4 columns-s=2>
     <r-cell span=row class=h1>Words</r-cell>
-
     <r-cell>
       <h4>Developing</h4>
       <p> I develop and scan my photos with the lovely <a href="http://pandalab.com">Panda Lab</a> in Seattle, Washington, because film is interesting, but scanning it is not. Shooting film instead of digital gives me a great reason to play around with some of the best stim toys I've ever found and look at bright lights and colors wherever I am all day, without sitting in front of a garbage device that makes an insufferably high-pitched whine and takes forever. Plus+, Sarah drives me all the way over there to the Space Needle on her motorcycle with the canisters tucked into my jacket pocket, which makes me feel really cool and sexy.</p>
@@ -111,112 +108,72 @@ Please make sure you README.md!
       <hr>
     </r-cell>
     
-    <r-cell span=..>
-      <r-cell span=row class=h1>Pictures</r-cell>
-      <r-grid columns=4 columns-s=2 columns-xs=1 class="compact settings">
-        <r-cell span=row class=h2 id="top">New</r-cell>
-        <r-cell span=row>
-          <r-grid columns=2>
-            <r-cell span=row class=h3>Alki Beach</r-cell>
-            <r-cell><img src="film/000040430016.jpg"></r-cell>
-            <r-cell><img src="film/000040430017.jpg"></r-cell>
-          </r-grid>
-        </r-cell>
-        <r-cell span=row>
-          <r-grid columns=4 columns-s=2>
-            <r-cell span=row class=h3>Gray's Harbor Lighthouse</r-cell>
-            <r-cell span=1..>
-              <p><a style="white-space: normal;" href="decommissioned.html">Another detour while on a roadtrip for the Connections Museum.</a></p></r-cell>
-            <r-cell><img src="film/000040430022.jpg"></r-cell>
-            <r-cell><img src="film/000040430019.jpg"></r-cell>
-            <r-cell><img src="film/000040430018.jpg"></r-cell>
-            <r-cell><img src="film/000040430020.jpg">
-            <p>This third-order Fresnel crystalline lens, made with arsenic and cyanide additives for clarity (which lend its glass the peculiar yellow-greenish color), floated upon a pool of mercury to reduce the weight the motor had to drive.</p></r-cell>
-          </r-grid>
-        </r-cell>
-      </r-grid>
-      <hr>
-      <r-grid columns=4 columns-s=2 columns-xs=1 class="compact settings">
-        <r-cell span=row id="flowers" class=h2>Floriography</r-cell>
-        <r-cell><img src="film/000022650001.jpg"></r-cell>
-        <r-cell><img src="film/000022640012.jpg"></r-cell>
-        <r-cell><img src="film/000022660017.jpg"></r-cell>
-        <r-cell><img src="film/000022640014.jpg"></r-cell>
-        <r-cell><img src="film/000022640016.jpg"></r-cell>
-        <r-cell><img src="film/000002500009.jpg"></r-cell>
-        <r-cell><img src="film/000002490003.jpg"></r-cell>
-        <r-cell><img src="film/000002480001.jpg"></r-cell>
-        <r-cell><img src="film/000002500006.jpg"></r-cell>
-        <r-cell><img src="film/000002480002.jpg"></r-cell>
-        <r-cell><img src="film/000002480016.jpg"></r-cell>
-        <r-cell><img src="film/000002480021.jpg"></r-cell>
-        <r-cell><img src="film/000002480026.jpg"></r-cell>
-      </r-grid>
-      <hr>
-      <r-grid columns=4 columns-s=2 columns-xs=1 class="compact settings">
-        <r-cell span=row class=h2 id="venus">Seattle in Springtime</r-cell>
-        <r-cell span=2><img src="film/000022640004.jpg"></r-cell>
-        <r-cell><img src="film/000022650030.jpg" /><p>Left Bank Books</p></r-cell>
-        <r-cell span=2><img src="film/000022640011.jpg"></r-cell>
-        <r-cell><img src="film/000002500008.jpg"></r-cell>
-        <r-cell><img src="film/000003770015.jpg"></r-cell>
-        <r-cell><img src="film/000002480017.jpg"></r-cell>
-        <r-cell><img src="film/000002480023.jpg"></r-cell>
-        <r-cell><img src="film/000002490016.jpg"></r-cell>
-        <r-cell><img src="film/000002500025.jpg"></r-cell>
-        <r-cell><img src="film/000002500037.jpg"></r-cell>
-        <r-cell><img src="film/000002480011.jpg"></r-cell>
-        <r-cell><img src="film/000002480025.jpg"></r-cell>
-        <r-cell><img src="film/000002500018.jpg"></r-cell>
-        <r-cell><img src="film/000002490029.jpg"></r-cell>
-      </r-grid>
-      <r-grid columns=4 columns-s=2 columns-xs=1 class="compact settings">
-        <r-cell span=row class=h2 id="misc">Miscellaneous</r-cell>
-        <r-cell><img src="film/000003770026.jpg"></r-cell>
-        <r-cell><img src="film/000078450021.jpg"></r-cell>
-        <r-cell><img src="film/000078450031.jpg"></r-cell>
-        <r-cell><img src="film/000003770029.jpg"></r-cell>
-        <r-cell><img src="film/000043520020.jpeg" ><p>Bismuth</p></r-cell>
-        <r-cell><img src="film/000078460005.jpg"></r-cell>
-        <r-cell><img src="film/000003770030.jpg"></r-cell>
-        <r-cell><img src="film/000043530001.jpeg"></r-cell>
-        <r-cell><img src="film/000087830002.jpg"></r-cell>
-        <r-cell><img src="film/000003770031.jpg"></r-cell>
-        <r-cell><img src="film/000087830010.jpg"></r-cell>
-        <r-cell><img src="film/000003770038.jpg"></r-cell>
-        <r-cell><img src="film/000043550024.jpeg"></r-cell>
-        <r-cell><img src="film/000087840021.jpg"></r-cell>
-        <r-cell><img src="film/000003790013.jpg"></r-cell>
-        <r-cell><img src="film/000043550029.jpeg"></r-cell>
-        <r-cell><img src="film/000003790027.jpg"></r-cell>
-        <r-cell><img src="film/000048720020.jpg"></r-cell>
-        <r-cell><img src="film/000048720025.jpg"></r-cell>
-        <r-cell><img src="film/000093910011.jpg"></r-cell>
-        <r-cell><img src="film/000043510023.jpeg"></r-cell>
-        <r-cell><img src="film/000043510028.jpeg"></r-cell>
-        <r-cell><img src="film/000043510034.jpeg"></r-cell>
-        <r-cell><img src="film/000078450011.jpg"></r-cell>
-      </r-grid>
-      <r-grid columns=4 columns-s=2 columns-xs=1 class="compact settings">
-        <r-cell span=row class=h2 id="phones">Connections Museum</r-cell>
-        <r-cell><img src="film/000022650032.jpg"></r-cell>
-        <r-cell><img src="film/000040440019.jpg" /><p>Denver's Union Station, while on a visit to the Telecommunications History Group's Archives</p></r-cell>
-        <r-cell><img src="film/museum/000003770006.jpg"></r-cell>
-        <r-cell><img src="film/museum/000003770005.jpg"></r-cell>
-        <r-cell><img src="film/museum/000043520013.jpeg"></r-cell>
-        <r-cell><img src="film/museum/000048720006.jpg" ><p>38.862796, -121.953035</p></r-cell>
-        <r-cell><img src="film/000048730008.jpg" ><p>KZSU Engineering</p></r-cell>
-        <r-cell><img src="film/museum/000043520022.jpeg"></r-cell>
-        <r-cell><img src="film/museum/000087830019.jpg"></r-cell>
-        <r-cell><img src="film/museum/000003770008.jpg"></r-cell>
-        <r-cell><img src="film/museum/000043520024.jpeg"></r-cell>
-        <r-cell><img src="film/museum/000043520012.jpeg"></r-cell>
-        <r-cell><img src="film/museum/000043550012.jpeg"></r-cell>
-        <r-cell span=2><img src="film/museum/000092480021.jpg"></r-cell>
-      </r-grid>
-    </r-cell>
-    <r-cell class=h6><a href="https://www.youtube.com/watch?v=91AmbXyCGq0">K Bye</a></r-cell>
   </r-grid>
+  <h1>Pictures</h1>
+  <r-grid columns=2>
+    <r-cell span=row class=h2>Alki Beach</r-cell>
+    <r-cell><img src="film/000040430016.jpg"></r-cell>
+    <r-cell><img src="film/000040430017.jpg"></r-cell>
+  </r-grid>
+  
+  <r-grid columns=4 columns-s=2>
+    <r-cell span=row class=h2>Gray's Harbor Lighthouse</r-cell>
+    <r-cell span=1..>
+      <p><a style="white-space: normal;" href="decommissioned.html">Another detour while on a roadtrip for the Connections Museum.</a></p></r-cell>
+    <r-cell><img src="film/000040430022.jpg"></r-cell>
+    <r-cell><img src="film/000040430019.jpg"></r-cell>
+    <r-cell><img src="film/000040430018.jpg"></r-cell>
+    <r-cell><img src="film/000040430020.jpg"></r-cell>
+    <r-cell span=2><p>This third-order Fresnel crystalline lens, made with arsenic and cyanide additives for clarity (which lend its glass the peculiar yellow-greenish color), floated upon a pool of mercury to reduce the weight the motor had to drive.</p></r-cell>
+  </r-grid>
+  <hr>
+  <r-grid columns=3 columns-s=1>
+    <r-cell span=row id="flowers" class=h2>Floriography</r-cell>
+    <r-cell span=2>
+      <p>Flowers are by far my favorite subject. The textures and colors are a great reminder to get out of my head and go for a walk, especially in the spring. Capitol Hill has an incredible variety in gardens.</p></r-cell>
+    <r-cell><img src="film/000022640012.jpg"></r-cell>
+    <r-cell><img src="film/000022660017.jpg"></r-cell>
+    <r-cell><img src="film/000002500009.jpg"></r-cell>
+    <r-cell><img src="film/000002480001.jpg"></r-cell>
+    <r-cell><img src="film/000002480002.jpg"></r-cell>
+    <r-cell><img src="film/000002480021.jpg"></r-cell>
+    <r-cell><img src="film/000002480011.jpg"></r-cell>
+    <r-cell><img src="film/000002490029.jpg"></r-cell>
+  </r-grid>
+  <hr>
+  <r-grid columns=4 columns-s=2>
+    <r-cell span=row class=h2 id="misc">Miscellaneous</r-cell>
+    <r-cell><img src="film/000078450031.jpg"></r-cell>
+    <r-cell><img src="film/000043520020.jpeg" ></r-cell>
+    <r-cell><p><a href="https://en.wikipedia.org/wiki/Bismuth" style="white-space: normal;"><i>"A bismuth hopper crystal exhibiting the stairstep crystal structure and iridescent colors, which are produced by interference of light within the oxide film on its surface." </i></a></p></r-cell>
+    <r-cell><img src="film/000078460005.jpg"></r-cell>
+    <r-cell><img src="film/000043550024.jpeg"></r-cell>
+    <r-cell><img src="film/000087840021.jpg"></r-cell>
+    <r-cell><img src="film/000003790013.jpg"></r-cell>
+    <r-cell span=2><img src="film/000022640004.jpg"></r-cell>
+    <r-cell><img src="film/000022650030.jpg" /></r-cell>
+    <r-cell><p>Left Bank Books has this cozy little nook behind the counter. Kathryn was kind enough to let me sit in it.</p></r-cell>
+    <r-cell><img src="film/000002500008.jpg"></r-cell>
+    <r-cell><img src="film/000003770015.jpg"></r-cell>
+    <r-cell><img src="film/000043550029.jpeg"></r-cell>
+    <r-cell><img src="film/000043510023.jpeg"></r-cell>
+    <r-cell><img src="film/000043510028.jpeg"></r-cell>
+    <r-cell><img src="film/000043510034.jpeg"></r-cell>
+    <r-cell><img src="film/000078450011.jpg"></r-cell>
+  </r-grid>
+  <r-grid columns=4 columns-s=2>
+    <r-cell span=row class=h2 id="phones">Connections Museum</r-cell>
+    <r-cell><img src="film/000022650032.jpg"></r-cell>
+    <r-cell><img src="film/museum/000003770005.jpg"></r-cell>
+    <r-cell><img src="film/museum/000043520013.jpeg"></r-cell>
+    <r-cell><img src="film/museum/000043520022.jpeg"></r-cell>
+    <r-cell><img src="film/museum/000087830019.jpg"></r-cell>
+    <r-cell><img src="film/museum/000003770008.jpg"></r-cell>
+    <r-cell><img src="film/museum/000043520024.jpeg"></r-cell>
+    <r-cell><img src="film/museum/000043520012.jpeg"></r-cell>
+    <r-cell span=2><img src="film/museum/000092480021.jpg"></r-cell>
+  </r-grid>
+  <a style="float: right;" href="https://www.youtube.com/watch?v=91AmbXyCGq0">K Bye</a>
 
 </body>
 </html>
