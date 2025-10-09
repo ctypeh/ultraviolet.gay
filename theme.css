@@ -102,8 +102,8 @@ a {
 a:hover {
   color: var(--yellow) !important;
   text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: var(--yellow);
+  text-decoration-style: wavy !important;
+  text-decoration-color: var(--violet) !important;
   text-decoration-skip-ink: auto;
 }
 
