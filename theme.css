@@ -1,6 +1,6 @@
 /* IMPORTS */
-@import url('https://rsms.me/inter/inter.css');
-@import url('https://rsms.me/raster/raster2.css');
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://rsms.me/raster/raster2.css");
 
 /* DEFINITIONS */
 :root {
@@ -13,9 +13,6 @@
 :root {
   --txt-color: white;
   --bg-color: black;
-  --highlight-txt-color: var(--yellow);
-  --callout-bg-color: var(--violet);
-  --a-txt-color: var(--yellow);
   background-color: var(--bg-color);
 }
 
@@ -49,11 +46,13 @@ body {
 }
 
 :root {
-  font-family: 'Inter', 'Akzidenz-Grotesk', 'Helvetica Neue', 'Helvetica', 'IBM Plex Sans', Arial, sans-serif;
+  font-family: "Inter", "Akzidenz-Grotesk", "Helvetica Neue", "Helvetica",
+    "IBM Plex Sans", Arial, sans-serif;
 }
 @supports (font-variation-settings: normal) {
   :root {
-    font-family: 'Inter var', 'Akzidenz-Grotesk', 'Helvetica Neue', 'Helvetica', 'IBM Plex Sans', Arial, sans-serif;
+    font-family: "Inter var", "Akzidenz-Grotesk", "Helvetica Neue", "Helvetica",
+      "IBM Plex Sans", Arial, sans-serif;
   }
 }
 
@@ -79,6 +78,7 @@ emoji {
 .yellow {
   color: var(--yellow);
 }
+
 .violet {
   color: var(--violet);
 }
@@ -121,7 +121,8 @@ ago, and so here it lives on. Thank you, internet person.
     rgba(95, 21, 242, 1) 60%,
     rgba(186, 12, 248, 1) 80%,
     rgba(251, 7, 217, 1) 90%,
-    rgba(255, 0, 0, 1) 100%);
+    rgba(255, 0, 0, 1) 100%
+  );
   background: -o-linear-gradient(
     90deg,
     #440099 0%,
@@ -136,7 +137,8 @@ ago, and so here it lives on. Thank you, internet person.
     rgba(95, 21, 242, 1) 60%,
     rgba(186, 12, 248, 1) 80%,
     rgba(251, 7, 217, 1) 90%,
-    rgba(255, 0, 0, 1) 100%);
+    rgba(255, 0, 0, 1) 100%
+  );
   background: -webkit-linear-gradient(
     90deg,
     #440099 0%,
@@ -151,7 +153,8 @@ ago, and so here it lives on. Thank you, internet person.
     rgba(95, 21, 242, 1) 60%,
     rgba(186, 12, 248, 1) 80%,
     rgba(251, 7, 217, 1) 90%,
-    rgba(255, 0, 0, 1) 100%);
+    rgba(255, 0, 0, 1) 100%
+  );
   background: linear-gradient(
     90deg,
     #440099 0%,
@@ -166,7 +169,8 @@ ago, and so here it lives on. Thank you, internet person.
     rgba(95, 21, 242, 1) 60%,
     rgba(186, 12, 248, 1) 80%,
     rgba(251, 7, 217, 1) 90%,
-    rgba(255, 0, 0, 1) 100%);
+    rgba(255, 0, 0, 1) 100%
+  );
   background: linear-gradient(
     90deg,
     #440099 0%,
@@ -181,7 +185,8 @@ ago, and so here it lives on. Thank you, internet person.
     rgba(95, 21, 242, 1) 60%,
     rgba(186, 12, 248, 1) 80%,
     rgba(251, 7, 217, 1) 90%,
-    rgba(255, 0, 0, 1) 100%);
+    rgba(255, 0, 0, 1) 100%
+  );
   background-size: 2500% 2500%;
 }
 */
