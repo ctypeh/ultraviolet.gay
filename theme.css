@@ -88,6 +88,24 @@ span.rainbow {
   -webkit-text-fill-color: transparent;
 }
 
+a {
+  color: var(--violet);
+  text-decoration: none;
+  white-space: normal;
+}
+
+a:hover {
+  color: var(--yellow) !important;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--yellow);
+  text-decoration-skip-ink: auto;
+}
+
+a:visited {
+  color: var(--violet);
+}
+
 @media (prefers-color-scheme: dark) {
   hr {
     -webkit-background-clip: block;
