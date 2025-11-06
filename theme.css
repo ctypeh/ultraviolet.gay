@@ -75,24 +75,6 @@ body {
   text-decoration: none;
 }
 
-/* SPECIAL */
-emoji {
-  font-style: normal !important;
-}
-
-.yellow {
-  color: var(--yellow);
-}
-
-.violet {
-  color: var(--violet);
-}
-
-span.rainbow {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 a {
   color: var(--violet);
   text-decoration: none;
@@ -109,6 +91,24 @@ a:hover {
 
 a:visited {
   color: var(--violet);
+}
+
+/* SPECIAL */
+emoji {
+  font-style: normal !important;
+}
+
+.yellow {
+  color: var(--yellow) !important;
+}
+
+.violet {
+  color: var(--violet) !important;
+}
+
+span.rainbow {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (prefers-color-scheme: dark) {
