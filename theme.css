@@ -114,6 +114,7 @@ span.rainbow {
 @media (prefers-color-scheme: dark) {
   hr {
     -webkit-background-clip: block;
+    background-color: white;
   }
 }
 
