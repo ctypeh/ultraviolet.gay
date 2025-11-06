@@ -77,10 +77,10 @@ emoji {
 }
 
 .yellow {
-  color: var(--yellow);
+  color: var(--yellow) !important;
 }
 .violet {
-  color: var(--violet);
+  color: var(--violet) !important;
 }
 
 span.rainbow {
