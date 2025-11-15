@@ -1,2 +1,0 @@
-“Sunflower.” 23rd September, 2025. Taken with my Nikon F,
-Micro-NIKKOR 55mm ƒ3.5 lens on 35mm film, Kodak Ektar ISO 100.
