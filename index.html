@@ -84,21 +84,17 @@
       </r-cell>
       <r-cell span="2" span-s="1">
         <h3>
-          <form
+          <form id="emailForm"
             action="https://buttondown.com/api/emails/embed-subscribe/ultraviolet"
             method="post"
             class="embeddable-buttondown-form"
           >
             <label for="bd-email" hidden>Enter your email</label>
-            <div id="email">
               <input type="email" name="email" id="bd-email" />
-              <input
-                id="email-submit"
-                class="yellow"
+              <button
+                id="emailSubmit"
                 type="submit"
-                value="⌘&nbsp;Subscribe"
-              />
-            </div>
+              />⌘&nbsp;Subscribe</button>
           </form>
         </h3>
         <h3>
